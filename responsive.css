@@ -1,0 +1,56 @@
+
+    @media (max-width: 918px ) {
+    body {
+      font-size: 18px;
+    }
+    header {
+        width: 926px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .container {
+       width: 896px;
+    }
+    .social-media {
+        float: right;
+        padding: 103px 146px 11px 4px;
+        word-spacing: 50px;
+    }
+    .projects a img {
+        max-width: 774px;
+    }
+
+
+  }
+  
+
+  
+  @media (max-width: 400px ) {
+    body {
+      font-size: 20px;
+    }
+    header {
+        width: 925px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .container {
+       width: 800px;
+    }
+    .social-media {
+        float: right;
+        padding: 75px 151px 31px 4px;
+        word-spacing: 50px;
+    }
+    .projects a img {
+        max-width: 733px;
+    }
+    }
+
+  @media (max-width: 1280px ) {
+    body {
+      font-size: 20px;
+    }
+
+
+  }
