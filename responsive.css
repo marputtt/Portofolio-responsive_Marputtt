@@ -1,12 +1,15 @@
 
     @media (max-width: 918px ) {
+      * {
+        max-width: 900px;
+      }
     body {
       font-size: 18px;
     }
     header {
         width: 926px;
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 71px;
     }
     .container {
        width: 896px;
@@ -26,16 +29,20 @@
 
   
   @media (max-width: 400px ) {
+    * {
+      max-width: 420px;
+    }
     body {
       font-size: 20px;
     }
     header {
-        width: 925px;
+        width: 100%;
         padding-top: 30px;
-        padding-bottom: 50px;
+        padding-bottom: 86px;
+        padding-right: 8px;
     }
     .container {
-       width: 800px;
+       width: 100%;
     }
     .social-media {
         float: right;
@@ -43,14 +50,16 @@
         word-spacing: 50px;
     }
     .projects a img {
-        max-width: 733px;
+        max-width: 339px;
+    }
+
+    .header-list{
+      float: right;
+      margin-right: 27px;
+      margin-top: -105px
     }
     }
 
-  @media (max-width: 1280px ) {
-    body {
-      font-size: 20px;
-    }
+  
 
-
-  }
+  
