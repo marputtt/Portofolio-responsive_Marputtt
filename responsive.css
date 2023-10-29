@@ -1,10 +1,15 @@
 
-    @media (max-width: 918px ) {
+    @media (max-width: 950px ) {
       * {
         max-width: 900px;
       }
     body {
       font-size: 18px;
+    }
+    .header-list {
+      float: right;
+      margin-right: -23px;
+      margin-top: -102px;
     }
     header {
         width: 926px;
@@ -15,9 +20,10 @@
        width: 896px;
     }
     .social-media {
-        float: right;
-        padding: 103px 146px 11px 4px;
-        word-spacing: 50px;
+      float: right;
+      padding: 1px 186px 11px 40px;
+      word-spacing: 50px;
+      display: initial; 
     }
     .projects a img {
         max-width: 774px;
@@ -36,10 +42,10 @@
       font-size: 20px;
     }
     header {
-        width: 100%;
-        padding-top: 30px;
-        padding-bottom: 86px;
-        padding-right: 8px;
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 191px;
+      padding-right: 8px;
     }
     .container {
        width: 100%;
@@ -52,14 +58,9 @@
     .projects a img {
         max-width: 339px;
     }
-
-    .header-list{
+    .header-list {
       float: right;
       margin-right: 27px;
-      margin-top: -105px
+      margin-top: -43px;
     }
-    }
-
-  
-
-  
+  }

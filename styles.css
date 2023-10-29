@@ -43,10 +43,16 @@ body {
  
   .social-media {
     float: right;
-    padding: 100px 400px 0px 4px;
+    padding: 54px 566px 0px 4px;
     word-spacing: 50px;
+    width: 80px;
+    display: flex;
+    gap: 10px;
   }
-
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
  
   .social-media img {
     width: 80px;
@@ -134,7 +140,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 50px;
     height: 65px;
     width: 100%;
