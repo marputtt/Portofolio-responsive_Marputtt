@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Marput's Portfolio</title>
 </head>
 
@@ -29,11 +30,54 @@
         <div class="container">
             <div class="project-wrapper">
             <div id="myproject" class="projects">
+              
               <H1> Projects</H1>
-              <a class="tokped" href="https://final-project-gigih-fe.vercel.app/play/channels"><img src="tokped.png" alt=""> </a>
+              <div id="tokpedClone">
+              <a class="tokped"  href="https://final-project-gigih-fe.vercel.app/play/channels"><img src="tokped.png" alt=""> </a>
               <p>You can check on my previous project. <br>
                 I made a tokopedia clone.
               </p>
+            </div>
+              <div id="lowcosClone">
+              <a class="lowcos"  href="https://gigihcaps-fe-sdg-8-o2d2fevcm-marputtts-projects.vercel.app"><img src="lowcos.png" alt=""> </a>
+              <p>This is my final project as an apprentice at GOTO IMPACT <br>
+                I made this finance education platform through this website. <br>
+                I developed it all my own since all my team member are AWOL. <br>
+                It was challenging because i worked alone. <br>
+                login :asda@adsada.com <br>
+                password: 123456
+              </p>
+            </div>
               </div>
 
   </body>
+  <script>
+     $('#lowcosClone').on({
+            mouseenter: function () {
+                $(this).css('transform', 'scale(1.05)');
+            },
+            mouseleave: function () {
+                $(this).css('transform', 'scale(1)');
+            },
+            click: function () {
+                $(this).css('animation', 'shake 0.5s');
+                setTimeout(() => {
+                    $(this).css('animation', '');
+                }, 500);
+            }
+        });
+        $('#tokpedClone').on({
+            mouseenter: function () {
+                $(this).css('transform', 'scale(1.05)');
+            },
+            mouseleave: function () {
+                $(this).css('transform', 'scale(1)');
+            },
+            click: function () {
+                $(this).css('animation', 'shake 0.5s');
+                setTimeout(() => {
+                    $(this).css('animation', '');
+                }, 500);
+            }
+        });
+  </script>

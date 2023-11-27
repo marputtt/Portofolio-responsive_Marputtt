@@ -6,6 +6,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="path/to/jquery.textillate.js"></script>
     <title>Marput's Portfolio</title>
 </head>
 <body>
@@ -53,16 +55,14 @@
 
 
       </div>
-      <div class="welcome-text">
+      <div class="welcome-text" >
+
         <h1>HI EVERYONE</h1>
-        <p>These are my personal informations and my projects.</p>
+        <p id="portfolio-title">These are my personal informations and my projects.</p>
       </div>
     </div>
     </div>
     </div>
-
-
-
       </div>
     </div>
 
@@ -74,4 +74,41 @@
     </div>
   </footer>
 </body>
+<script>
+  $(document).ready(function(){
+ var portfolioTitle = "These are my personal informations and my projects.";
+ var typingSpeed = 100;
+ var deletingSpeed = 50; 
+ var pause = 2000; 
+ var index = 0; 
+ var textLength = portfolioTitle.length; // 
+  
+ 
+ $("#portfolio-title").text(portfolioTitle.substring(0, index));
+  
+ 
+ var type = function() {
+    if (index < textLength) {
+      $("#portfolio-title").text(portfolioTitle.substring(0, index + 1));
+      index++;
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(deleteText, pause);
+    }
+ };
+  
+ var deleteText = function() {
+    if (index > 0) {
+      $("#portfolio-title").text(portfolioTitle.substring(0, index - 1));
+      index--;
+      setTimeout(deleteText, deletingSpeed);
+    } else {
+      setTimeout(type, pause);
+    }
+ };
+
+  
+ setTimeout(type, 1000);
+});
+      </script>
 </html>
